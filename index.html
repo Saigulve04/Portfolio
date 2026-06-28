@@ -1,621 +1,928 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sai Gulve | Data Engineer & ML Portfolio</title>
-    <meta name="description" content="Portfolio of Gulve Sai Suresh - Data Engineer & Computer Engineering Student specializing in ML, AI, ETL pipelines, and cloud computing.">
+    <meta
+      name="description"
+      content="Portfolio of Gulve Sai Suresh - Data Engineer & Computer Engineering Student specializing in ML, AI, ETL pipelines, and cloud computing."
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&family=Fira+Code:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <!-- Typewriter Splash Screen -->
     <div id="splash" class="splash-overlay">
-        <div class="splash-content">
-            <span class="code-bracket">&lt;</span>
-            <h1 class="typewriter" id="typewriter-text">Sai Gulve</h1>
-            <span class="code-bracket">&gt;</span>
-        </div>
+      <div class="splash-content">
+        <span class="code-bracket">&lt;</span>
+        <h1 class="typewriter" id="typewriter-text">Sai Gulve</h1>
+        <span class="code-bracket">&gt;</span>
+      </div>
     </div>
 
     <!-- Main Content Wrapper (Hidden initially) -->
     <div id="main-content" class="hidden">
-        <!-- Header & Nav -->
-        <header>
-            <nav>
-                <div class="logo">
-                    <span class="accent">&lt;</span>Sai Gulve<span class="accent">/&gt;</span>
+      <!-- Header & Nav -->
+      <header>
+        <nav>
+          <div class="logo">
+            <span class="accent">&lt;</span>Sai Gulve<span class="accent"
+              >/&gt;</span
+            >
+          </div>
+          <ul class="nav-links">
+            <li>
+              <a href="#about"><i class="fa-regular fa-user"></i> About</a>
+            </li>
+            <li>
+              <a href="#summary"
+                ><i class="fa-solid fa-file-lines"></i> Resume</a
+              >
+            </li>
+            <li>
+              <a href="#skills"
+                ><i class="fa-solid fa-laptop-code"></i> Skills</a
+              >
+            </li>
+            <li>
+              <a href="#experience"
+                ><i class="fa-solid fa-briefcase"></i> Experience</a
+              >
+            </li>
+            <li>
+              <a href="#projects"
+                ><i class="fa-solid fa-code-branch"></i> Projects</a
+              >
+            </li>
+            <li>
+              <a href="#education"
+                ><i class="fa-solid fa-graduation-cap"></i> Education</a
+              >
+            </li>
+            <li>
+              <a href="#certifications"
+                ><i class="fa-solid fa-award"></i> Certs</a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-regular fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+          <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+          <div class="hero-content">
+            <div class="badge">
+              <i class="fa-solid fa-bolt"></i> Open to Opportunities
+            </div>
+            <h1>Hi, I'm <span class="highlight">Sai Gulve</span></h1>
+            <h2 class="sub-headline">Data Engineer & ML Developer</h2>
+            <p>
+              Computer Engineering Student specializing in scalable data
+              pipelines, analytics, and deep learning solutions.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="cta-button primary"
+                >View My Work <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <a href="#contact" class="cta-button secondary">Get In Touch</a>
+            </div>
+            <div class="social-links">
+              <a href="mailto:saigulve9996@gmail.com" title="Email"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/saisureshgulve2004"
+                target="_blank"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/Saigulve04"
+                target="_blank"
+                title="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="tel:+919665872519" title="Phone"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-container">
+              <img
+                src="images/image.JPG"
+                alt="Sai Gulve Profile"
+                class="profile-pic"
+              />
+              <div class="profile-glow"></div>
+            </div>
+          </div>
+          <div class="hero-shape"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+          <div class="section-title">
+            <span>01. Intro</span>
+            <h2>About Me</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="lead-text">
+                Data-driven Computer Engineering student specializing in data
+                analytics, ETL pipelines, and AI/ML solutions.
+              </p>
+              <p>
+                Proficient in Python, SQL, and cloud platforms (AWS, GCP), with
+                hands-on experience designing scalable data workflows,
+                analytical models, and computer vision systems. Passionate about
+                building impactful, data-driven technology solutions.
+              </p>
+              <div class="contact-info-grid">
+                <div class="info-item">
+                  <span class="label">Name</span>
+                  <span class="val">Gulve Sai Suresh</span>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#about"><i class="fa-regular fa-user"></i> About</a></li>
-                    <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
-                    <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
-                    <li><a href="#projects"><i class="fa-solid fa-code-branch"></i> Projects</a></li>
-                    <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
-                    <li><a href="#certifications"><i class="fa-solid fa-award"></i> Certs</a></li>
-                    <li><a href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a></li>
+                <div class="info-item">
+                  <span class="label">Location</span>
+                  <span class="val">Pune, Maharashtra, India</span>
+                </div>
+                <div class="info-item">
+                  <span class="label">Email</span>
+                  <span class="val"
+                    ><a href="mailto:saigulve9996@gmail.com"
+                      >saigulve9996@gmail.com</a
+                    ></span
+                  >
+                </div>
+                <div class="info-item">
+                  <span class="label">Phone</span>
+                  <span class="val"
+                    ><a href="tel:+919665872519">+91 9665872519</a></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Resume Highlights Section -->
+        <section id="summary" class="summary">
+          <div class="section-title">
+            <span>02. Resume</span>
+            <h2>Professional Summary</h2>
+          </div>
+          <div class="summary-grid">
+            <div class="summary-card">
+              <h3>Current Role</h3>
+              <p>
+                Data Engineer at Colgate Palmolive (Jul 2025 – Present) working
+                on Airflow ETL, Snowflake data modeling, and GCP ingestion
+                pipelines.
+              </p>
+            </div>
+            <div class="summary-card">
+              <h3>Education</h3>
+              <p>
+                B.Tech. Computer Engineering — MIT Academy of Engineering, Pune
+                • CGPA: 8.13 / 10
+              </p>
+            </div>
+            <div class="summary-card">
+              <h3>Certifications</h3>
+              <p>
+                7+ certifications including AWS Cloud Practitioner, dbt
+                Fundamentals, PCAP Python, and NPTEL Deep Learning.
+              </p>
+            </div>
+            <div class="summary-card">
+              <h3>Experience</h3>
+              <p>
+                3+ internships at Cisco, SortUs and Colgate Palmolive; 5+
+                applied projects in computer vision, NLP, and predictive
+                analytics.
+              </p>
+            </div>
+            <div class="summary-card">
+              <h3>Leadership</h3>
+              <p>
+                Held leadership roles as Vice President of the Innovation
+                Council and Club Coordinator for the Entrepreneurship
+                Development Cell.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills">
+          <div class="section-title">
+            <span>03. Expertise</span>
+            <h2>Technical Skills</h2>
+          </div>
+          <div class="skills-container">
+            <!-- Languages & Tools -->
+            <div class="skill-category">
+              <div class="category-header">
+                <i class="fa-solid fa-code"></i>
+                <h3>Languages & Tools</h3>
+              </div>
+              <div class="skill-tags">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Jinja</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>MATLAB</span>
+              </div>
+            </div>
+
+            <!-- Data & BI -->
+            <div class="skill-category">
+              <div class="category-header">
+                <i class="fa-solid fa-chart-pie"></i>
+                <h3>Data & BI</h3>
+              </div>
+              <div class="skill-tags">
+                <span>Microsoft Excel</span>
+                <span>Power BI</span>
+                <span>Data Analysis</span>
+                <span>Data Visualization</span>
+                <span>Data Engineering</span>
+              </div>
+            </div>
+
+            <!-- Cloud & Infra -->
+            <div class="skill-category">
+              <div class="category-header">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>Cloud & Infra</h3>
+              </div>
+              <div class="skill-tags">
+                <span>Snowflake</span>
+                <span>dbt</span>
+                <span>Airflow</span>
+                <span>MySQL</span>
+                <span>AWS</span>
+                <span>GCP</span>
+                <span>Docker</span>
+                <span>Terraform</span>
+                <span>Pub/Sub</span>
+                <span>Cloud Computing</span>
+              </div>
+            </div>
+
+            <!-- ML & AI -->
+            <div class="skill-category">
+              <div class="category-header">
+                <i class="fa-solid fa-brain"></i>
+                <h3>ML & AI</h3>
+              </div>
+              <div class="skill-tags">
+                <span>Machine Learning</span>
+                <span>Deep Learning</span>
+                <span>Computer Vision</span>
+                <span>NLP</span>
+                <span>YOLOv7</span>
+                <span>TensorFlow</span>
+                <span>Scikit-learn</span>
+                <span>XGBoost</span>
+              </div>
+            </div>
+
+            <!-- Web Dev -->
+            <div class="skill-category">
+              <div class="category-header">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Web Dev</h3>
+              </div>
+              <div class="skill-tags">
+                <span>React.js</span>
+                <span>TypeScript</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Internship Experience Section -->
+        <section id="experience" class="timeline-section">
+          <div class="section-title">
+            <span>04. Journey</span>
+            <h2>Internship Experience</h2>
+          </div>
+          <div class="timeline">
+            <!-- Colgate Palmolive -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Data Engineer</h3>
+                  <span class="timeline-company">Colgate Palmolive</span>
+                  <span class="timeline-date">Jul 2025 – Present</span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Built Airflow ETL pipelines integrating Snowflake datasets,
+                    enabling scalable data processing and analytics reporting.
+                  </li>
+                  <li>
+                    Implemented GCP data ingestion pipelines using Terraform and
+                    Pub/Sub, supporting real-time event-driven data collection.
+                  </li>
+                  <li>
+                    Developed dbt models and SQL transformations to structure
+                    master and staging datasets for analytical insights.
+                  </li>
+                  <li>
+                    Designed Snowflake schemas and dimensional models to enhance
+                    data integrity and improve reporting efficiency.
+                  </li>
                 </ul>
-                <div class="mobile-menu-btn">
-                    <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+
+            <!-- SortUs -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Full Stack Web Developer</h3>
+                  <span class="timeline-company">SortUs</span>
+                  <span class="timeline-date">Jun 2025 – Jul 2025</span>
                 </div>
-            </nav>
-        </header>
+                <ul class="timeline-bullets">
+                  <li>
+                    Developed scalable web applications using React.js,
+                    TypeScript, Express.js, and MongoDB to support tech-driven
+                    e-waste management.
+                  </li>
+                  <li>
+                    Handled frontend/backend tasks including UI integration,
+                    REST API development, database management, and performance
+                    tuning.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-        <main>
-            <!-- Hero Section -->
-            <section id="hero" class="hero">
-                <div class="hero-content">
-                    <div class="badge"><i class="fa-solid fa-bolt"></i> Open to Opportunities</div>
-                    <h1>Hi, I'm <span class="highlight">Sai Gulve</span></h1>
-                    <h2 class="sub-headline">Data Engineer & ML Developer</h2>
-                    <p>Computer Engineering Student specializing in scalable data pipelines, analytics, and deep learning solutions.</p>
-                    <div class="hero-ctas">
-                        <a href="#projects" class="cta-button primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
-                        <a href="#contact" class="cta-button secondary">Get In Touch</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="mailto:saigulve9996@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/saisureshgulve2004" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/Saigulve04" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="tel:+919665872519" title="Phone"><i class="fa-solid fa-phone"></i></a>
-                    </div>
+            <!-- Cisco -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Cyber Security Intern</h3>
+                  <span class="timeline-company">Cisco (VIP Programme)</span>
+                  <span class="timeline-date">May 2024 – Aug 2024</span>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-container">
-                        <img src="images/image.JPG" alt="Sai Gulve Profile" class="profile-pic">
-                        <div class="profile-glow"></div>
-                    </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Completed Cybersecurity Essentials and Introduction to
+                    Packet Tracer via Cisco Networking Academy.
+                  </li>
+                  <li>
+                    Designed and implemented a secure network infrastructure
+                    with firewalls, IDS, and VPNs.
+                  </li>
+                  <li>
+                    Conducted vulnerability assessments and penetration testing,
+                    documenting security measure effectiveness.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+          <div class="section-title">
+            <span>05. Creative Labs</span>
+            <h2>Featured Projects</h2>
+          </div>
+          <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+              <div class="project-icon-row">
+                <i class="fa-solid fa-microscope"></i>
+                <div class="project-links">
+                  <a href="https://github.com/Saigulve04" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
-                <div class="hero-shape"></div>
-            </section>
+              </div>
+              <h3>Real-Time Shock Absorber Quality Detection</h3>
+              <p>
+                Engineered a real-time quality control system for shock absorber
+                manufacturing using YOLOv7 object detection. Developed custom
+                models for Filling, Crimping, and Spinning stage classification
+                with 95%+ accuracy. Implemented contour detection for precise
+                radius measurement; built a Python dashboard reducing inspection
+                time by 60%.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>YOLOv7</span>
+                <span>Computer Vision</span>
+                <span>Machine Learning</span>
+              </div>
+            </div>
 
-            <!-- About Section -->
-            <section id="about" class="about">
-                <div class="section-title">
-                    <span>01. Intro</span>
-                    <h2>About Me</h2>
+            <!-- Project 2 -->
+            <div class="project-card">
+              <div class="project-icon-row">
+                <i class="fa-solid fa-traffic-light"></i>
+                <div class="project-links">
+                  <a href="https://github.com/Saigulve04" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p class="lead-text">
-                            Data-driven Computer Engineering student specializing in data analytics, ETL pipelines, and AI/ML solutions.
-                        </p>
-                        <p>
-                            Proficient in Python, SQL, and cloud platforms (AWS, GCP), with hands-on experience designing scalable data workflows, analytical models, and computer vision systems. Passionate about building impactful, data-driven technology solutions.
-                        </p>
-                        <div class="contact-info-grid">
-                            <div class="info-item">
-                                <span class="label">Name</span>
-                                <span class="val">Gulve Sai Suresh</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="label">Location</span>
-                                <span class="val">Pune, Maharashtra, India</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="label">Email</span>
-                                <span class="val"><a href="mailto:saigulve9996@gmail.com">saigulve9996@gmail.com</a></span>
-                            </div>
-                            <div class="info-item">
-                                <span class="label">Phone</span>
-                                <span class="val"><a href="tel:+919665872519">+91 9665872519</a></span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <h3>Real-Time Helmet Detection & Number Plate Segregation</h3>
+              <p>
+                Built a traffic safety monitoring system with dual-detection
+                pipeline: motorcycle rider tracking and number plate recognition
+                (92% accuracy). Integrated OCR for automated license plate
+                extraction and violation logging at 30 FPS on live traffic
+                feeds.
+              </p>
+              <div class="project-tech">
+                <span>YOLOv7</span>
+                <span>Computer Vision</span>
+                <span>OCR</span>
+                <span>ML</span>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="project-icon-row">
+                <i class="fa-solid fa-chart-line"></i>
+                <div class="project-links">
+                  <a href="https://github.com/Saigulve04" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
+              <h3>Customer Purchase Prediction</h3>
+              <p>
+                Trained ML models (XGBoost, Random Forest) to predict customer
+                purchase likelihood; used SHAP for model interpretability.
+                Delivered actionable insights for targeted marketing and
+                inventory management via Scikit-learn Pipelines.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>XGBoost</span>
+                <span>Random Forest</span>
+                <span>SHAP</span>
+                <span>Scikit-learn</span>
+              </div>
+            </div>
 
-            <!-- Technical Skills Section -->
-            <section id="skills" class="skills">
-                <div class="section-title">
-                    <span>02. Expertise</span>
-                    <h2>Technical Skills</h2>
+            <!-- Project 4 -->
+            <div class="project-card">
+              <div class="project-icon-row">
+                <i class="fa-solid fa-language"></i>
+                <div class="project-links">
+                  <a href="https://github.com/Saigulve04" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
-                <div class="skills-container">
-                    <!-- Languages & Tools -->
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fa-solid fa-code"></i>
-                            <h3>Languages & Tools</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>Jinja</span>
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>MATLAB</span>
-                        </div>
-                    </div>
+              </div>
+              <h3>Headline Generation using T5 Transformer</h3>
+              <p>
+                Fine-tuned T5 (Text-to-Text Transfer Transformer) for automatic
+                headline generation from article content. Achieved ROUGE-1: 4.23
+                and BLEU: 3.15; compared Seq2Seq, Encoder-Decoder with
+                Attention, and Transformer architectures.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>NLP</span>
+                <span>HuggingFace</span>
+              </div>
+            </div>
 
-                    <!-- Data & BI -->
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fa-solid fa-chart-pie"></i>
-                            <h3>Data & BI</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Microsoft Excel</span>
-                            <span>Power BI</span>
-                            <span>Data Analysis</span>
-                            <span>Data Visualization</span>
-                            <span>Data Engineering</span>
-                        </div>
-                    </div>
-
-                    <!-- Cloud & Infra -->
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fa-solid fa-cloud"></i>
-                            <h3>Cloud & Infra</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Snowflake</span>
-                            <span>dbt</span>
-                            <span>Airflow</span>
-                            <span>MySQL</span>
-                            <span>AWS</span>
-                            <span>GCP</span>
-                            <span>Docker</span>
-                            <span>Terraform</span>
-                            <span>Pub/Sub</span>
-                            <span>Cloud Computing</span>
-                        </div>
-                    </div>
-
-                    <!-- ML & AI -->
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fa-solid fa-brain"></i>
-                            <h3>ML & AI</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Machine Learning</span>
-                            <span>Deep Learning</span>
-                            <span>Computer Vision</span>
-                            <span>NLP</span>
-                            <span>YOLOv7</span>
-                            <span>TensorFlow</span>
-                            <span>Scikit-learn</span>
-                            <span>XGBoost</span>
-                        </div>
-                    </div>
-
-                    <!-- Web Dev -->
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fa-solid fa-globe"></i>
-                            <h3>Web Dev</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>React.js</span>
-                            <span>TypeScript</span>
-                            <span>Express.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
+            <!-- Project 5 -->
+            <div class="project-card">
+              <div class="project-icon-row">
+                <i class="fa-solid fa-gem"></i>
+                <div class="project-links">
+                  <a href="https://github.com/Saigulve04" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
+              <h3>Diamond Price Prediction</h3>
+              <p>
+                Predicted diamond prices using Random Forest Regressor achieving
+                R² = 0.98; performed full data analysis and preprocessing
+                pipeline with visual reports.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Random Forest</span>
+                <span>Data Visualization</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <!-- Internship Experience Section -->
-            <section id="experience" class="timeline-section">
-                <div class="section-title">
-                    <span>03. Journey</span>
-                    <h2>Internship Experience</h2>
+        <!-- Education Section -->
+        <section id="education" class="timeline-section">
+          <div class="section-title">
+            <span>06. Learning</span>
+            <h2>Education</h2>
+          </div>
+          <div class="timeline">
+            <!-- B.Tech -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>B.Tech. – Computer Engineering</h3>
+                  <span class="timeline-company"
+                    >MIT Academy of Engineering, Pune</span
+                  >
+                  <span class="timeline-date">2022 – 2026</span>
                 </div>
-                <div class="timeline">
-                    <!-- Colgate Palmolive -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>Data Engineer</h3>
-                                <span class="timeline-company">Colgate Palmolive</span>
-                                <span class="timeline-date">Jul 2025 – Present</span>
-                            </div>
-                            <ul class="timeline-bullets">
-                                <li>Built Airflow ETL pipelines integrating Snowflake datasets, enabling scalable data processing and analytics reporting.</li>
-                                <li>Implemented GCP data ingestion pipelines using Terraform and Pub/Sub, supporting real-time event-driven data collection.</li>
-                                <li>Developed dbt models and SQL transformations to structure master and staging datasets for analytical insights.</li>
-                                <li>Designed Snowflake schemas and dimensional models to enhance data integrity and improve reporting efficiency.</li>
-                            </ul>
-                        </div>
-                    </div>
+                <p class="education-details">
+                  <strong>CGPA:</strong> 8.13 / 10
+                </p>
+              </div>
+            </div>
 
-                    <!-- SortUs -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>Full Stack Web Developer</h3>
-                                <span class="timeline-company">SortUs</span>
-                                <span class="timeline-date">Jun 2025 – Jul 2025</span>
-                            </div>
-                            <ul class="timeline-bullets">
-                                <li>Developed scalable web applications using React.js, TypeScript, Express.js, and MongoDB to support tech-driven e-waste management.</li>
-                                <li>Handled frontend/backend tasks including UI integration, REST API development, database management, and performance tuning.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Cisco -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>Cyber Security Intern</h3>
-                                <span class="timeline-company">Cisco (VIP Programme)</span>
-                                <span class="timeline-date">May 2024 – Aug 2024</span>
-                            </div>
-                            <ul class="timeline-bullets">
-                                <li>Completed Cybersecurity Essentials and Introduction to Packet Tracer via Cisco Networking Academy.</li>
-                                <li>Designed and implemented a secure network infrastructure with firewalls, IDS, and VPNs.</li>
-                                <li>Conducted vulnerability assessments and penetration testing, documenting security measure effectiveness.</li>
-                            </ul>
-                        </div>
-                    </div>
+            <!-- 12th -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>12th Grade – MSBSHSE</h3>
+                  <span class="timeline-company"
+                    >BGP Sahyadri Junior College, Sangamner</span
+                  >
+                  <span class="timeline-date">Completed 2022</span>
                 </div>
-            </section>
+                <p class="education-details">
+                  <strong>Percentage:</strong> 73.17%
+                </p>
+              </div>
+            </div>
 
-            <!-- Projects Section -->
-            <section id="projects" class="projects">
-                <div class="section-title">
-                    <span>04. Creative Labs</span>
-                    <h2>Featured Projects</h2>
+            <!-- 10th -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>10th Grade – CBSE</h3>
+                  <span class="timeline-company"
+                    >Strawberry English Medium School, Sangamner</span
+                  >
+                  <span class="timeline-date">Completed 2020</span>
                 </div>
-                <div class="project-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-icon-row">
-                            <i class="fa-solid fa-microscope"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Saigulve04" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Real-Time Shock Absorber Quality Detection</h3>
-                        <p>Engineered a real-time quality control system for shock absorber manufacturing using YOLOv7 object detection. Developed custom models for Filling, Crimping, and Spinning stage classification with 95%+ accuracy. Implemented contour detection for precise radius measurement; built a Python dashboard reducing inspection time by 60%.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>YOLOv7</span>
-                            <span>Computer Vision</span>
-                            <span>Machine Learning</span>
-                        </div>
-                    </div>
+                <p class="education-details">
+                  <strong>Percentage:</strong> 86.40%
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-icon-row">
-                            <i class="fa-solid fa-traffic-light"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Saigulve04" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Real-Time Helmet Detection & Number Plate Segregation</h3>
-                        <p>Built a traffic safety monitoring system with dual-detection pipeline: motorcycle rider tracking and number plate recognition (92% accuracy). Integrated OCR for automated license plate extraction and violation logging at 30 FPS on live traffic feeds.</p>
-                        <div class="project-tech">
-                            <span>YOLOv7</span>
-                            <span>Computer Vision</span>
-                            <span>OCR</span>
-                            <span>ML</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="project-icon-row">
-                            <i class="fa-solid fa-chart-line"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Saigulve04" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Customer Purchase Prediction</h3>
-                        <p>Trained ML models (XGBoost, Random Forest) to predict customer purchase likelihood; used SHAP for model interpretability. Delivered actionable insights for targeted marketing and inventory management via Scikit-learn Pipelines.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>XGBoost</span>
-                            <span>Random Forest</span>
-                            <span>SHAP</span>
-                            <span>Scikit-learn</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <div class="project-icon-row">
-                            <i class="fa-solid fa-language"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Saigulve04" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Headline Generation using T5 Transformer</h3>
-                        <p>Fine-tuned T5 (Text-to-Text Transfer Transformer) for automatic headline generation from article content. Achieved ROUGE-1: 4.23 and BLEU: 3.15; compared Seq2Seq, Encoder-Decoder with Attention, and Transformer architectures.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>NLP</span>
-                            <span>HuggingFace</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 5 -->
-                    <div class="project-card">
-                        <div class="project-icon-row">
-                            <i class="fa-solid fa-gem"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Saigulve04" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Diamond Price Prediction</h3>
-                        <p>Predicted diamond prices using Random Forest Regressor achieving R² = 0.98; performed full data analysis and preprocessing pipeline with visual reports.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Scikit-learn</span>
-                            <span>Random Forest</span>
-                            <span>Data Visualization</span>
-                        </div>
-                    </div>
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications">
+          <div class="section-title">
+            <span>07. Credentials</span>
+            <h2>Certifications & Courses</h2>
+          </div>
+          <div class="certs-grid">
+            <!-- AWS -->
+            <div class="cert-card" data-issuer="aws">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-brands fa-aws"></i>
                 </div>
-            </section>
+                <span class="cert-issuer">Amazon Web Services</span>
+              </div>
+              <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
+              <div class="cert-card-footer">
+                <a
+                  href="https://www.credly.com/users/saisuresh-gulve/badges"
+                  target="_blank"
+                  class="cert-verify-link"
+                >
+                  <span>Verify on Credly</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-            <!-- Education Section -->
-            <section id="education" class="timeline-section">
-                <div class="section-title">
-                    <span>05. Learning</span>
-                    <h2>Education</h2>
+            <!-- dbt -->
+            <div class="cert-card" data-issuer="dbt">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-solid fa-database"></i>
                 </div>
-                <div class="timeline">
-                    <!-- B.Tech -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>B.Tech. – Computer Engineering</h3>
-                                <span class="timeline-company">MIT Academy of Engineering, Pune</span>
-                                <span class="timeline-date">2022 – 2026</span>
-                            </div>
-                            <p class="education-details"><strong>CGPA:</strong> 8.13 / 10</p>
-                        </div>
-                    </div>
+                <span class="cert-issuer">dbt Labs</span>
+              </div>
+              <h3 class="cert-title">dbt Fundamentals</h3>
+              <div class="cert-card-footer">
+                <a
+                  href="https://www.credly.com/users/saisuresh-gulve/badges"
+                  target="_blank"
+                  class="cert-verify-link"
+                >
+                  <span>Verify on Credly</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-                    <!-- 12th -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>12th Grade – MSBSHSE</h3>
-                                <span class="timeline-company">BGP Sahyadri Junior College, Sangamner</span>
-                                <span class="timeline-date">Completed 2022</span>
-                            </div>
-                            <p class="education-details"><strong>Percentage:</strong> 73.17%</p>
-                        </div>
-                    </div>
-
-                    <!-- 10th -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>10th Grade – CBSE</h3>
-                                <span class="timeline-company">Strawberry English Medium School, Sangamner</span>
-                                <span class="timeline-date">Completed 2020</span>
-                            </div>
-                            <p class="education-details"><strong>Percentage:</strong> 86.40%</p>
-                        </div>
-                    </div>
+            <!-- Python -->
+            <div class="cert-card" data-issuer="python">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-brands fa-python"></i>
                 </div>
-            </section>
+                <span class="cert-issuer">Python Institute</span>
+              </div>
+              <h3 class="cert-title">PCAP: Programming Essentials in Python</h3>
+              <div class="cert-card-footer">
+                <a
+                  href="https://www.credly.com/users/saisuresh-gulve/badges"
+                  target="_blank"
+                  class="cert-verify-link"
+                >
+                  <span>Verify on Credly</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-            <!-- Certifications Section -->
-            <section id="certifications" class="certifications">
-                <div class="section-title">
-                    <span>06. Credentials</span>
-                    <h2>Certifications & Courses</h2>
+            <!-- CCNA -->
+            <div class="cert-card" data-issuer="cisco">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-solid fa-network-wired"></i>
                 </div>
-                <div class="certs-grid">
-                    <!-- AWS -->
-                    <div class="cert-card" data-issuer="aws">
-                        <div class="cert-card-header">
-                            <div class="cert-icon-wrapper">
-                                <i class="fa-brands fa-aws"></i>
-                            </div>
-                            <span class="cert-issuer">Amazon Web Services</span>
-                        </div>
-                        <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
-                        <div class="cert-card-footer">
-                            <a href="https://www.credly.com/users/saisuresh-gulve/badges" target="_blank" class="cert-verify-link">
-                                <span>Verify on Credly</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
+                <span class="cert-issuer">Cisco Networking Academy</span>
+              </div>
+              <h3 class="cert-title">
+                CCNA (Cisco Certified Network Associate)
+              </h3>
+              <div class="cert-card-footer">
+                <a
+                  href="https://www.credly.com/users/saisuresh-gulve/badges"
+                  target="_blank"
+                  class="cert-verify-link"
+                >
+                  <span>Verify on Credly</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-                    <!-- dbt -->
-                    <div class="cert-card" data-issuer="dbt">
-                        <div class="cert-card-header">
-                            <div class="cert-icon-wrapper">
-                                <i class="fa-solid fa-database"></i>
-                            </div>
-                            <span class="cert-issuer">dbt Labs</span>
-                        </div>
-                        <h3 class="cert-title">dbt Fundamentals</h3>
-                        <div class="cert-card-footer">
-                            <a href="https://www.credly.com/users/saisuresh-gulve/badges" target="_blank" class="cert-verify-link">
-                                <span>Verify on Credly</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Python -->
-                    <div class="cert-card" data-issuer="python">
-                        <div class="cert-card-header">
-                            <div class="cert-icon-wrapper">
-                                <i class="fa-brands fa-python"></i>
-                            </div>
-                            <span class="cert-issuer">Python Institute</span>
-                        </div>
-                        <h3 class="cert-title">PCAP: Programming Essentials in Python</h3>
-                        <div class="cert-card-footer">
-                            <a href="https://www.credly.com/users/saisuresh-gulve/badges" target="_blank" class="cert-verify-link">
-                                <span>Verify on Credly</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- CCNA -->
-                    <div class="cert-card" data-issuer="cisco">
-                        <div class="cert-card-header">
-                            <div class="cert-icon-wrapper">
-                                <i class="fa-solid fa-network-wired"></i>
-                            </div>
-                            <span class="cert-issuer">Cisco Networking Academy</span>
-                        </div>
-                        <h3 class="cert-title">CCNA (Cisco Certified Network Associate)</h3>
-                        <div class="cert-card-footer">
-                            <a href="https://www.credly.com/users/saisuresh-gulve/badges" target="_blank" class="cert-verify-link">
-                                <span>Verify on Credly</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Deep Learning -->
-                    <div class="cert-card" data-issuer="nptel">
-                        <div class="cert-card-header">
-                            <div class="cert-icon-wrapper">
-                                <i class="fa-solid fa-brain"></i>
-                            </div>
-                            <span class="cert-issuer">NPTEL – IIT Madras</span>
-                        </div>
-                        <h3 class="cert-title">Deep Learning Certification</h3>
-                        <div class="cert-card-footer">
-                            <a href="https://archive.nptel.ac.in/" target="_blank" class="cert-verify-link">
-                                <span>Verify Certificate</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Power BI -->
-                    <div class="cert-card" data-issuer="microsoft">
-                        <div class="cert-card-header">
-                            <div class="cert-icon-wrapper">
-                                <i class="fa-solid fa-chart-simple"></i>
-                            </div>
-                            <span class="cert-issuer">Microsoft Partner</span>
-                        </div>
-                        <h3 class="cert-title">Building Interactive Dashboards (Power BI)</h3>
-                        <div class="cert-card-footer">
-                            <a href="https://www.credly.com/users/saisuresh-gulve/badges" target="_blank" class="cert-verify-link">
-                                <span>Verify on Credly</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- MATLAB -->
-                    <div class="cert-card" data-issuer="mathworks">
-                        <div class="cert-card-header">
-                            <div class="cert-icon-wrapper">
-                                <i class="fa-solid fa-calculator"></i>
-                            </div>
-                            <span class="cert-issuer">MathWorks</span>
-                        </div>
-                        <h3 class="cert-title">MATLAB Onramp Certification</h3>
-                        <div class="cert-card-footer">
-                            <a href="https://matlabacademy.mathworks.com/" target="_blank" class="cert-verify-link">
-                                <span>Verify Certificate</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Usable Security -->
-                    <div class="cert-card" data-issuer="coursera">
-                        <div class="cert-card-header">
-                            <div class="cert-icon-wrapper">
-                                <i class="fa-solid fa-shield-halved"></i>
-                            </div>
-                            <span class="cert-issuer">Coursera (Univ. of Maryland)</span>
-                        </div>
-                        <h3 class="cert-title">Usable Security (Network & Cyber Security)</h3>
-                        <div class="cert-card-footer">
-                            <a href="https://www.coursera.org/" target="_blank" class="cert-verify-link">
-                                <span>Verify Certificate</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Android -->
-                    <div class="cert-card" data-issuer="android">
-                        <div class="cert-card-header">
-                            <div class="cert-icon-wrapper">
-                                <i class="fa-brands fa-android"></i>
-                            </div>
-                            <span class="cert-issuer">Android Developer Virtual Internship</span>
-                        </div>
-                        <h3 class="cert-title">Android Developer Virtual Internship</h3>
-                        <div class="cert-card-footer">
-                            <a href="https://www.credly.com/users/saisuresh-gulve/badges" target="_blank" class="cert-verify-link">
-                                <span>Verify on Credly</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
+            <!-- Deep Learning -->
+            <div class="cert-card" data-issuer="nptel">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-solid fa-brain"></i>
                 </div>
-            </section>
+                <span class="cert-issuer">NPTEL – IIT Madras</span>
+              </div>
+              <h3 class="cert-title">Deep Learning Certification</h3>
+              <div class="cert-card-footer">
+                <a
+                  href="https://archive.nptel.ac.in/"
+                  target="_blank"
+                  class="cert-verify-link"
+                >
+                  <span>Verify Certificate</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-            <!-- Leadership & Activities Section -->
-            <section id="leadership" class="leadership">
-                <div class="section-title">
-                    <span>07. Impact</span>
-                    <h2>Leadership & Activities</h2>
+            <!-- Power BI -->
+            <div class="cert-card" data-issuer="microsoft">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-solid fa-chart-simple"></i>
                 </div>
-                <div class="leadership-container">
-                    <div class="leadership-card">
-                        <div class="leadership-icon"><i class="fa-solid fa-people-roof"></i></div>
-                        <div class="leadership-content">
-                            <h3>Club Coordinator – Entrepreneurship Development Cell</h3>
-                            <p>Organized workshops, seminars, and networking events; invited industry experts to foster an innovation culture among students.</p>
-                        </div>
-                    </div>
-                    <div class="leadership-card">
-                        <div class="leadership-icon"><i class="fa-solid fa-lightbulb"></i></div>
-                        <div class="leadership-content">
-                            <h3>Vice President – Institute's Innovation Council</h3>
-                            <p>Led initiatives promoting entrepreneurship; coordinated guest lectures and workshops on innovation and technology.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                <span class="cert-issuer">Microsoft Partner</span>
+              </div>
+              <h3 class="cert-title">
+                Building Interactive Dashboards (Power BI)
+              </h3>
+              <div class="cert-card-footer">
+                <a
+                  href="https://www.credly.com/users/saisuresh-gulve/badges"
+                  target="_blank"
+                  class="cert-verify-link"
+                >
+                  <span>Verify on Credly</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-            <!-- Contact Section -->
-            <section id="contact" class="contact">
-                <div class="section-title">
-                    <span>08. Get in Touch</span>
-                    <h2>Contact</h2>
+            <!-- MATLAB -->
+            <div class="cert-card" data-issuer="mathworks">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-solid fa-calculator"></i>
                 </div>
-                <p class="contact-sub">Have a project, opportunity, or simply want to say hello? Drop a line!</p>
-                <div class="contact-details">
-                    <a href="mailto:saigulve9996@gmail.com" class="contact-btn"><i class="fa-regular fa-envelope"></i> saigulve9996@gmail.com</a>
-                    <a href="tel:+919665872519" class="contact-btn"><i class="fa-solid fa-phone"></i> +91-9665872519</a>
-                </div>
-            </section>
-        </main>
+                <span class="cert-issuer">MathWorks</span>
+              </div>
+              <h3 class="cert-title">MATLAB Onramp Certification</h3>
+              <div class="cert-card-footer">
+                <a
+                  href="https://matlabacademy.mathworks.com/"
+                  target="_blank"
+                  class="cert-verify-link"
+                >
+                  <span>Verify Certificate</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-        <footer>
-            <p>&copy; 2026 Gulve Sai Suresh. Built with <i class="fa-solid fa-heart" style="color: #ff4a5a;"></i> and absolute dedication.</p>
-        </footer>
+            <!-- Usable Security -->
+            <div class="cert-card" data-issuer="coursera">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="cert-issuer">Coursera (Univ. of Maryland)</span>
+              </div>
+              <h3 class="cert-title">
+                Usable Security (Network & Cyber Security)
+              </h3>
+              <div class="cert-card-footer">
+                <a
+                  href="https://www.coursera.org/"
+                  target="_blank"
+                  class="cert-verify-link"
+                >
+                  <span>Verify Certificate</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Android -->
+            <div class="cert-card" data-issuer="android">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-brands fa-android"></i>
+                </div>
+                <span class="cert-issuer"
+                  >Android Developer Virtual Internship</span
+                >
+              </div>
+              <h3 class="cert-title">Android Developer Virtual Internship</h3>
+              <div class="cert-card-footer">
+                <a
+                  href="https://www.credly.com/users/saisuresh-gulve/badges"
+                  target="_blank"
+                  class="cert-verify-link"
+                >
+                  <span>Verify on Credly</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Leadership & Activities Section -->
+        <section id="leadership" class="leadership">
+          <div class="section-title">
+            <span>08. Impact</span>
+            <h2>Leadership & Activities</h2>
+          </div>
+          <div class="leadership-container">
+            <div class="leadership-card">
+              <div class="leadership-icon">
+                <i class="fa-solid fa-people-roof"></i>
+              </div>
+              <div class="leadership-content">
+                <h3>Club Coordinator – Entrepreneurship Development Cell</h3>
+                <p>
+                  Organized workshops, seminars, and networking events; invited
+                  industry experts to foster an innovation culture among
+                  students.
+                </p>
+              </div>
+            </div>
+            <div class="leadership-card">
+              <div class="leadership-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="leadership-content">
+                <h3>Vice President – Institute's Innovation Council</h3>
+                <p>
+                  Led initiatives promoting entrepreneurship; coordinated guest
+                  lectures and workshops on innovation and technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+          <div class="section-title">
+            <span>09. Get in Touch</span>
+            <h2>Contact</h2>
+          </div>
+          <p class="contact-sub">
+            Have a project, opportunity, or simply want to say hello? Drop a
+            line or send a direct message below.
+          </p>
+          <div class="contact-grid">
+            <div class="contact-details">
+              <a href="mailto:saigulve9996@gmail.com" class="contact-btn"
+                ><i class="fa-regular fa-envelope"></i>
+                saigulve9996@gmail.com</a
+              >
+              <a href="tel:+919665872519" class="contact-btn"
+                ><i class="fa-solid fa-phone"></i> +91-9665872519</a
+              >
+            </div>
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <label for="contact-name">Name</label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="contact-email">Email</label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+              <div class="form-row full-width">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Type your message here"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="contact-submit">Send Message</button>
+              <p class="form-note">
+                This will open your email client to send the message.
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2026 Gulve Sai Suresh. Built with
+          <i class="fa-solid fa-heart" style="color: #ff4a5a"></i> and absolute
+          dedication.
+        </p>
+      </footer>
     </div>
 
     <!-- main javascript -->
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>
